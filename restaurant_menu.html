@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Inn | Menu</title>
+    <style>
+        /* Optional simple styling to make it look nicer – feel free to remove or change */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        header {
+            text-align: center;
+            background: #f8f1e9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #6b4e31;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #c85a17;
+        }
+        section {
+            margin: 40px 0;
+        }
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background: #fffaf0;
+        }
+        .menu-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .menu-item img {
+            border-radius: 8px;
+        }
+        form {
+            background: #fffaf0;
+            padding: 25px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .quantity-group {
+            margin: 15px 0;
+        }
+        .add-ons, .delivery-options {
+            margin: 20px 0;
+        }
+        label {
+            margin-right: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 90px;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            background: #c85a17;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background: #a34712;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img 
+        width="300" 
+        id="header-img" 
+        alt="Cafe Inn logo" 
+        src="https://scontent.fvte1-2.fna.fbcdn.net/v/t39.30808-6/305959821_487692106505780_7342358405791046194_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=N0prSSHy-VgQ7kNvwETPTIq&_nc_oc=AdlfgYjwrmdawXI8-MGulbnpGrsu-7xqxOXqrhqETf6HiORrQcQHEe8lRZXaFLu0i_8&_nc_zt=23&_nc_ht=scontent.fvte1-2.fna&_nc_gid=qqvVEZRispZvOZz5NYW5BA&_nc_ss=8&oh=00_AfzK7zEUIw3x31vjzFcdX8RdrxrcgB6w5KCfRBHHMXTJYg&oe=69B041DC"
+    />
+    <h1>Cafe Inn</h1>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-form">Order Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="menu">
+        <h2>Menu</h2>
+        
+        <article class="menu-item">
+            <img 
+                width="150" 
+                src="https://scontent.fvte1-2.fna.fbcdn.net/v/t39.30808-6/536268459_1398836902245606_2831816314995052073_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=OvuVdAef730Q7kNvwFcCgPz&_nc_oc=AdlFzpMgcKiH4NQ2ydz02OFyWb7dron8U8rOJsTztx2uk0fLfA6yTIVT1N3TEQ4scWI&_nc_zt=23&_nc_ht=scontent.fvte1-2.fna&_nc_gid=YsKvg8uqt2VfVtArbqauOA&_nc_ss=8&oh=00_AfzL7rwMHl2rOG9SKr4bRKKrcQUKUdOJ8E0oanYT1fzK8Q&oe=69B034AC" 
+                alt="Tom Yum Spaghetti"
+            />
+            <div>
+                <h3>Tom Yum Spaghetti</h3>
+                <p>A killer Thai-Italian mashup that turns classic tom yum goong vibes into pasta form.<br>
+                Price: <i>120,000 KIP</i></p>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img 
+                width="150" 
+                src="https://scontent.fvte1-2.fna.fbcdn.net/v/t39.30808-6/539445005_1398837058912257_8161948812640347451_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=DQVku5O2ooQQ7kNvwGO74U-&_nc_oc=Adn1CMj5lGF2m7EB9UEwKEQEYEIfDR_CDtL_QrEgx3gNrY3eKHHZUXMUIhI3YsSTDAM&_nc_zt=23&_nc_ht=scontent.fvte1-2.fna&_nc_gid=6pNxOjNOgYlewejmvp7SXw&_nc_ss=8&oh=00_AfwHiAEc55ydmFpSx9b0-_8Z2tlQzijvr9M9wbgYBo9o3w&oe=69B021B8" 
+                alt="Papaya Salad"
+            />
+            <div>
+                <h3>Papaya Salad</h3>
+                <p>Super fresh, light, addictive, and a classic street food that wakes up your taste buds!<br>
+                Price: <i>90,000 KIP</i></p>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img 
+                width="150" 
+                src="https://scontent.fvte1-1.fna.fbcdn.net/v/t39.30808-6/500057558_1321971169932180_8238790327922013035_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=792urqT11pMQ7kNvwHErQn1&_nc_oc=AdkuhJTkyv_uCQECU1q1cCqwNuZT0nJm1RX5B4GASxO3VdrzPb7X4Qe_HTknwRk0YtA&_nc_zt=23&_nc_ht=scontent.fvte1-1.fna&_nc_gid=wjApHtKgNOIkLI9_S0_4Kg&_nc_ss=8&oh=00_AfwIFZALZ1xSgNSSwc43L_DrkxFqVM3dp5YJbtPOMca4_Q&oe=69B056D9" 
+                alt="Matcha Cake"
+            />
+            <div>
+                <h3>Matcha Cake</h3>
+                <p>Matcha cake layered with light whipped cream or matcha frosting, dusted with premium matcha powder for that intense green emerald look and subtle bitter-sweet flavor.<br>
+                Price: <i>80,000 KIP</i></p>
+            </div>
+        </article>
+
+        <article class="menu-item">
+            <img 
+                width="150" 
+                src="https://scontent.fvte5-1.fna.fbcdn.net/v/t39.30808-6/502843845_1321971363265494_8107129570079845878_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7b2446&_nc_ohc=cZ8jHdZ2AsoQ7kNvwHq21Kd&_nc_oc=AdlSV7hdPfoxHnji3RvSTfvzIR9_OIW8XIFJ15f8D_JhXj6fC0Xfy1zE1wUZ0Y_ubrs&_nc_zt=23&_nc_ht=scontent.fvte5-1.fna&_nc_gid=Vgr6tsrQ8vWKYPnS_eblIA&_nc_ss=8&oh=00_AfyBIEQJ2jUo93_rzVGlqKkqp3fASx-anzgz3cPcPw178g&oe=69B02629" 
+                alt="Scrambled Eggs"
+            />
+            <div>
+                <h3>Scrambled Eggs</h3>
+                <p>Whisked eggs seasoned lightly with fish sauce and a pinch of MSG for that savory depth common in Lao cooking.<br>
+                Price: <i>130,000 KIP</i></p>
+            </div>
+        </article>
+    </section>
+
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        
+        <form action="#" method="post"> <!-- Change action to your real backend later -->
+
+            <!-- Quantities for menu items -->
+            <fieldset>
+                <legend>How many of each?</legend>
+                
+                <div class="quantity-group">
+                    <label for="qty-tomyum">Tom Yum Spaghetti:</label>
+                    <input type="number" id="qty-tomyum" name="qty-tomyum" min="0" value="0" required>
+                </div>
+                
+                <div class="quantity-group">
+                    <label for="qty-papaya">Papaya Salad:</label>
+                    <input type="number" id="qty-papaya" name="qty-papaya" min="0" value="0" required>
+                </div>
+                
+                <div class="quantity-group">
+                    <label for="qty-matcha">Matcha Cake:</label>
+                    <input type="number" id="qty-matcha" name="qty-matcha" min="0" value="0" required>
+                </div>
+                
+                <div class="quantity-group">
+                    <label for="qty-eggs">Scrambled Eggs:</label>
+                    <input type="number" id="qty-eggs" name="qty-eggs" min="0" value="0" required>
+                </div>
+            </fieldset>
+
+            <!-- Add-ons / sides (checkboxes – can select multiple) -->
+            <fieldset class="add-ons">
+                <legend>Add-ons / Sides</legend>
+                
+                <label><input type="checkbox" name="addon" value="extra-spicy"> Extra Spicy (+10,000 KIP)</label><br>
+                <label><input type="checkbox" name="addon" value="french-fries"> French Fries (+35,000 KIP)</label><br>
+                <label><input type="checkbox" name="addon" value="extra-egg"> Extra Fried Egg (+20,000 KIP)</label><br>
+                <label><input type="checkbox" name="addon" value="cheese"> Cheese Topping (+25,000 KIP)</label>
+            </fieldset>
+
+            <!-- Example: pickup or delivery (radio – choose one) -->
+            <fieldset class="delivery-options">
+                <legend>Pickup or Delivery?</legend>
+                
+                <label><input type="radio" name="delivery" value="pickup" checked> Pickup (Free)</label><br>
+                <label><input type="radio" name="delivery" value="delivery"> Delivery (+30,000 KIP)</label>
+            </fieldset>
+
+            <!-- Special requests -->
+            <label for="special-requests">Special Requests / Notes:</label><br>
+            <textarea id="special-requests" name="special-requests" placeholder="E.g. no MSG, less spicy, birthday message on cake..."></textarea>
+
+            <br><br>
+            <input type="submit" value="Go To Checkout">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Made with love by Vivian</p>
+</footer>
+
+</body>
+</html>
